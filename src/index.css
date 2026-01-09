@@ -18,18 +18,16 @@ body {
 
 /* Join Room Screen */
 .join-container {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 
 input {
   display: block;
   margin: 10px auto;
   padding: 10px;
   width: 200px;
+  height: 30px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
@@ -39,7 +37,7 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
-  background-color: #007bff;
+  background-color: #6c757d;
   color: white;
   font-weight: bold;
   transition: background 0.2s;
@@ -51,6 +49,7 @@ button:hover {
 
 /* Scoreboard */
 .score {
+  display: flex;
   font-size: 1.2rem;
   font-weight: bold;
   color: #333;
@@ -109,4 +108,88 @@ button:hover {
   left: 50px;         /* Distance from left */
   text-align: left;
   z-index: 10;        /* Ensures it stays on top */
+}
+.descimg{
+  height: 300px
+}
+
+.txt{
+  margin-left: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.txt1{
+  margin-left: 20px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.txt2{
+  position: absolute;
+  text-align: right;
+  right: 300px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.geeks h1 {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  color: black;
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+  animation: typing 2s steps(22) forwards;
+  margin-bottom: -10px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 22ch;
+  }
+}
+a:link {
+  color: rgb(88, 88, 88);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(88, 88, 88);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
+.instructions {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
